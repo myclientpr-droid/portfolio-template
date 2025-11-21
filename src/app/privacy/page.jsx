@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
                 <p className="mb-4">We use the information we collect to:</p>
                 <ul className="list-disc list-inside space-y-2 mb-4">
                   <li>Respond to your inquiries and provide customer support</li>
-                  <li>Send you technical notices and updates</li>
+                  <li>Send you technical notices and posts</li>
                   <li>Communicate with you about products, services, and events</li>
                   <li>Monitor and analyze trends, usage, and activities</li>
                   <li>Detect, investigate, and prevent fraudulent transactions and other illegal activities</li>

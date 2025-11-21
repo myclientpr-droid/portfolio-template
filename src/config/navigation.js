@@ -1,7 +1,7 @@
 export const navigationConfig = {
   mainNav: [
     { label: 'Home', href: '/' },
-    { label: 'Blog', href: '/blog' },
+    { label: 'posts', href: '/posts' },
     { 
       label: 'Categories', 
       href: '/categories',

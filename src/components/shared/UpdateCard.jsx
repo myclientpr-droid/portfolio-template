@@ -49,7 +49,7 @@ export function UpdateCard({ update, index }) {
         
         <CardHeader className="pb-3">
           <CardTitle className="text-xl group-hover:text-primary transition-colors">
-            <Link href={`/updates/${update.slug}`} className="hover:underline">
+            <Link href={`/posts/${update.slug}`} className="hover:underline">
               {update.title}
             </Link>
           </CardTitle>
@@ -102,7 +102,7 @@ export function UpdateCard({ update, index }) {
               </a>
             )}
             <Link 
-              href={`/updates/${update.slug}`} 
+              href={`/posts/${update.slug}`} 
               className="text-primary hover:underline text-sm font-medium ml-auto"
             >
               Read More →

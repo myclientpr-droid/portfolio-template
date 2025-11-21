@@ -1,13 +1,13 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { updatesConfig, updatesData, getUpdatesByCategory } from '@/config/updates-data';
+import { postsConfig, postsData, getPostsByCategory } from '@/config/posts-data';
 import { UpdateCard } from '@/components/shared/UpdateCard';
 import { FilterTabs } from '@/components/shared/FilterTabs';
 
-export default function UpdatesPage() {
+export default function PostsPage() {
   const [activeCategory, setActiveCategory] = useState('All');
-  const filteredUpdates = getUpdatesByCategory(activeCategory);
+  const filteredPosts = getPostsByCategory(activeCategory);
 
   return (
     <div className="min-h-screen pt-20">
@@ -18,9 +18,9 @@ export default function UpdatesPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-5xl font-bold mb-4">{updatesConfig.title}</h1>
+          <h1 className="text-5xl font-bold mb-4">{postsConfig.title}</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {updatesConfig.subtitle}
+            {postsConfig.subtitle}
           </p>
         </motion.div>
 
@@ -32,7 +32,7 @@ export default function UpdatesPage() {
           className="mb-12"
         >
           <FilterTabs 
-            categories={updatesConfig.categories}
+            categories={postsConfig.categories}
             activeCategory={activeCategory}
             onCategoryChange={setActiveCategory}
           />
@@ -45,24 +45,24 @@ export default function UpdatesPage() {
           transition={{ delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {filteredUpdates.map((update, index) => (
+          {filteredPosts.map((post, index) => (
             <UpdateCard 
-              key={update.id} 
-              update={update} 
+              key={post.id} 
+              update={post} 
               index={index}
             />
           ))}
         </motion.div>
 
         {/* Empty State */}
-        {filteredUpdates.length === 0 && (
+        {filteredPosts.length === 0 && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="text-center py-12"
           >
             <p className="text-xl text-muted-foreground">
-              No updates found in this category.
+              No posts found in this category.
             </p>
           </motion.div>
         )}

@@ -14,12 +14,10 @@ export const siteConfig = {
   
   // Social Links
   social: {
-    twitter: "https://twitter.com/nooraziz",
-    instagram: "https://instagram.com/nooraziz",
-    linkedin: "https://linkedin.com/in/nooraziz",
-    medium: "https://medium.com/@nooraziz",
-    youtube: "https://youtube.com/@nooraziz",
-    newsletter: "https://subscribe.nooraziz.com",
+    twitter: "https://x.com/aziz_soe?s=09",
+    instagram: "https://www.instagram.com/noorazizmgsoe?igsh=dmhyaXJjdjIzY24x",
+    facebook: "https://www.facebook.com/nooraziz2003?mibextid=ZbWKwL",
+    youtube: "https://youtube.com/@nooraziz2003?si=ccvsS2DNM29etgpy",
   },
   
   // Mission Statement
@@ -196,7 +194,7 @@ categories: [
   // Newsletter Info - Updated focus
   newsletter: {
     title: "Voices of Resilience",
-    description: "Weekly stories of hope, advocacy updates, and insights from refugee communities worldwide.",
+    description: "Weekly stories of hope, advocacy posts, and insights from refugee communities worldwide.",
     subscribers: "25K+",
     frequency: "Weekly"
   },

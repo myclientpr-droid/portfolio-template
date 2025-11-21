@@ -1,10 +1,10 @@
-export const updatesConfig = {
+export const postsConfig = {
   title: "Latest Writings",
   subtitle: "Fresh insights and recent articles from my blog",
   categories: ["All", "Technology", "Digital Culture", "Content Creation", "Personal Growth", "AI & Future Tech"],
 };
 
-export const updatesData = [
+export const postsData = [
   {
     id: 1,
     slug: "future-content-creation-ai",
@@ -175,32 +175,32 @@ export const updatesData = [
   }
 ];
 
-// Helper function to get recent updates
-export const getRecentUpdates = (limit = 3) => {
-  return updatesData
+// Helper function to get recent posts
+export const getRecentPosts = (limit = 3) => {
+  return postsData
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, limit);
 };
 
-// Helper function to get featured updates
-export const getFeaturedUpdates = () => {
-  return updatesData.filter(update => update.featured);
+// Helper function to get featured posts
+export const getFeaturedPosts = () => {
+  return postsData.filter(post => post.featured);
 };
 
-// Helper function to get updates by category
-export const getUpdatesByCategory = (category) => {
-  if (category === "All") return updatesData;
-  return updatesData.filter(update => update.category === category);
+// Helper function to get posts by category
+export const getPostsByCategory = (category) => {
+  if (category === "All") return postsData;
+  return postsData.filter(post => post.category === category);
 };
 
 // Helper function to get posts by tag
 export const getPostsByTag = (tag) => {
-  return updatesData.filter(update => 
-    update.tags.some(t => t.toLowerCase() === tag.toLowerCase())
+  return postsData.filter(post => 
+    post.tags.some(t => t.toLowerCase() === tag.toLowerCase())
   );
 };
 
 // Helper function to get popular posts (based on featured status as proxy)
 export const getPopularPosts = () => {
-  return getFeaturedUpdates().slice(0, 4);
+  return getFeaturedPosts().slice(0, 4);
 };

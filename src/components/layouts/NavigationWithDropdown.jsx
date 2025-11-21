@@ -37,7 +37,7 @@ export function NavigationWithDropdown() {
       href: '/projects',
       dropdown: siteConfig.categories?.slice(0, 5) || []
     },
-    { label: 'Blog', href: '/updates' },
+    { label: 'Blog', href: '/posts' },
     { label: 'About', href: '/about' },
   ];
 

@@ -21,8 +21,9 @@ export function Navigation() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Blog', href: '/updates' },
+    { label: 'Posts', href: '/posts' },
     { label: 'Categories', href: '/projects' },
+    { label: 'Adcovacy', href: '/advocacy' },
     { label: 'About', href: '/about' },
   ];
 

@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation';
-import { updatesData } from '@/config/updates-data';
+import { postsData } from '@/config/posts-data';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 
-export default function UpdateDetailPage({ params }) {
-  const update = updatesData.find(u => u.slug === params.slug);
+export default function PostDetailPage({ params }) {
+  const {slug} = params;
+  const post = postsData.find(u => u.slug === slug);
 
-  if (!update) {
+  if (!post) {
     notFound();
   }
 
@@ -23,7 +24,7 @@ export default function UpdateDetailPage({ params }) {
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Back Button */}
         <Link 
-          href="/updates" 
+          href="/posts" 
           className="inline-flex items-center text-primary hover:underline mb-8"
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,51 +36,51 @@ export default function UpdateDetailPage({ params }) {
         {/* Header */}
         <div className="mb-8">
           <div className="flex flex-wrap gap-2 mb-4">
-            <Badge variant="secondary">{update.category}</Badge>
+            <Badge variant="secondary">{post.category}</Badge>
             <Badge 
               variant="secondary" 
               className={
-                update.status === 'completed' ? 'bg-green-100 text-green-800' :
-                update.status === 'in-progress' ? 'bg-blue-100 text-blue-800' :
+                post.status === 'completed' ? 'bg-green-100 text-green-800' :
+                post.status === 'in-progress' ? 'bg-blue-100 text-blue-800' :
                 'bg-gray-100 text-gray-800'
               }
             >
-              {update.status.replace('-', ' ')}
+              {post.status.replace('-', ' ')}
             </Badge>
-            {update.featured && (
+            {post.featured && (
               <Badge variant="default" className="bg-yellow-100 text-yellow-800">
                 Featured
               </Badge>
             )}
           </div>
           
-          <h1 className="text-4xl font-bold mb-4">{update.title}</h1>
-          <p className="text-xl text-muted-foreground mb-4">{update.description}</p>
+          <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+          <p className="text-xl text-muted-foreground mb-4">{post.description}</p>
           <time className="text-sm text-muted-foreground">
-            Published on {formatDate(update.date)}
+            Published on {formatDate(post.date)}
           </time>
         </div>
 
         {/* Featured Image */}
         <div className="mb-8 rounded-lg overflow-hidden">
           <img 
-            src={update.image} 
-            alt={update.title}
+            src={post.image} 
+            alt={post.title}
             className="w-full h-64 md:h-96 object-cover"
           />
         </div>
 
         {/* Content */}
         <div className="prose prose-lg max-w-none mb-8">
-          <p className="text-lg leading-relaxed">{update.fullDescription}</p>
+          <p className="text-lg leading-relaxed">{post.fullDescription}</p>
         </div>
 
         {/* Technologies */}
-        {update.technologies && update.technologies.length > 0 && (
+        {post.technologies && post.technologies.length > 0 && (
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-4">Technologies Used</h3>
             <div className="flex flex-wrap gap-2">
-              {update.technologies.map((tech) => (
+              {post.technologies.map((tech) => (
                 <Badge key={tech} variant="outline" className="text-sm">
                   {tech}
                 </Badge>
@@ -89,11 +90,11 @@ export default function UpdateDetailPage({ params }) {
         )}
 
         {/* Tags */}
-        {update.tags && update.tags.length > 0 && (
+        {post.tags && post.tags.length > 0 && (
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-4">Tags</h3>
             <div className="flex flex-wrap gap-2">
-              {update.tags.map((tag) => (
+              {post.tags.map((tag) => (
                 <span 
                   key={tag} 
                   className="inline-block bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm"
@@ -107,9 +108,9 @@ export default function UpdateDetailPage({ params }) {
 
         {/* Action Buttons */}
         <div className="flex flex-wrap gap-4 pt-8 border-t">
-          {update.liveUrl && (
+          {post.liveUrl && (
             <a 
-              href={update.liveUrl} 
+              href={post.liveUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors"
@@ -120,9 +121,9 @@ export default function UpdateDetailPage({ params }) {
               </svg>
             </a>
           )}
-          {update.githubUrl && (
+          {post.githubUrl && (
             <a 
-              href={update.githubUrl} 
+              href={post.githubUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
