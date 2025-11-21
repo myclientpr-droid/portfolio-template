@@ -30,7 +30,7 @@ export default function PostDetailPage({ params }) {
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Back to Updates
+          Back to Posts
         </Link>
 
         {/* Header */}
@@ -66,7 +66,7 @@ export default function PostDetailPage({ params }) {
           <img 
             src={post.image} 
             alt={post.title}
-            className="w-full h-64 md:h-96 object-cover"
+            className="w-full h-64 md:h-96 object-cover rounded-md"
           />
         </div>
 

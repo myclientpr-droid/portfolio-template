@@ -6,26 +6,25 @@ export const postsConfig = {
 
 export const postsData = [
   {
-    id: 1,
-    slug: "future-content-creation-ai",
-    title: "The Future of Content Creation in the Age of AI",
-    description: "How artificial intelligence is revolutionizing the way we create and consume digital content, and what it means for creators.",
-    fullDescription: "In this comprehensive exploration, we dive deep into how AI tools are transforming the content creation landscape. From automated writing assistants to AI-powered image generation, the digital creative space is undergoing a massive shift. I discuss the opportunities for creators to leverage these tools while maintaining their unique voice and perspective. The article covers practical applications, ethical considerations, and predictions for where AI content creation is headed in the next 2-5 years.",
-    image: "/images/blog/ai-content-creation.jpg",
-    category: "AI & Future Tech",
-    date: "2024-01-15",
-    tags: ["AI", "Content Creation", "Future Tech", "Digital Trends", "Innovation"],
-    featured: true,
-    readTime: "8 min read",
-    liveUrl: "https://medium.com/@nooraziz/future-content-creation-ai",
-    githubUrl: null,
-    images: [
-      "/images/blog/ai-content-1.jpg",
-      "/images/blog/ai-content-2.jpg"
-    ],
-    technologies: ["AI Writing", "Content Strategy", "Digital Tools"],
-    status: "published"
-  },
+  id: 1,
+  slug: "from-refugee-camp-to-full-stack-developer",
+  title: "From a Refugee Camp to Full-Stack Developer: My Journey of Resilience and Purpose",
+  description: "How I turned a simple mobile phone, endless challenges, and a dream into real platforms that help thousands.",
+  fullDescription: "My story begins in the Rohingya refugee camp in Cox's Bazar, Bangladesh—a place defined by struggle, scarcity, and survival. Growing up in exile with no computer, no powerful tools, and no formal learning environment, I carried a quiet but unbreakable dream: to educate myself and build something meaningful for my community.\n\nI began learning web development using nothing but a basic mobile phone and unstable internet. Every lesson was a battle—power cuts, limited resources, no mentors, and the emotional weight of camp life. I wrote my first lines of code sitting in darkness, and I continued even when everything around me seemed designed to stop me.\n\nDespite the barriers, I became a Full-Stack Developer. But my goal was never just to code—it was to solve real problems. That purpose led me to create **Myanmar Book Space**, an educational platform that now supports thousands of students struggling with textbook shortages and limited learning resources. I later built a Blood Donation Platform, connecting donors and patients during emergencies and offering hope in critical moments.\n\nMy journey is not one of comfort, but one of resilience—proving that even in the hardest conditions, knowledge can grow, solutions can be built, and hope can lead to real change.",
+  image: "/post-images/fullhstackdev.jpg",
+  category: "Personal Journey",
+  date: "2025-01-01",
+  tags: ["Inspiration", "Refugee Story", "Full-Stack Development", "Community Impact"],
+  featured: true,
+  readTime: "8 min read",
+  liveUrl: null,
+  githubUrl: null,
+  images: [
+    "/post-images/fullhstackdev.jpg",
+  ],
+  technologies: ["JavaScript", "React", "Next.js", "Express.js", "MongoDB"],
+  status: "published"
+},
   {
     id: 2,
     slug: "personal-branding-guide-2024",
@@ -172,7 +171,28 @@ export const postsData = [
     ],
     technologies: ["Digital Wellness", "Productivity Systems", "Mindful Tech Use"],
     status: "published"
-  }
+  },
+   {
+    id: 9,
+    slug: "future-content-creation-ai",
+    title: "The Future of Content Creation in the Age of AI",
+    description: "How artificial intelligence is revolutionizing the way we create and consume digital content, and what it means for creators.",
+    fullDescription: "In this comprehensive exploration, we dive deep into how AI tools are transforming the content creation landscape. From automated writing assistants to AI-powered image generation, the digital creative space is undergoing a massive shift. I discuss the opportunities for creators to leverage these tools while maintaining their unique voice and perspective. The article covers practical applications, ethical considerations, and predictions for where AI content creation is headed in the next 2-5 years.",
+    image: "/images/blog/ai-content-creation.jpg",
+    category: "AI & Future Tech",
+    date: "2024-01-15",
+    tags: ["AI", "Content Creation", "Future Tech", "Digital Trends", "Innovation"],
+    featured: true,
+    readTime: "8 min read",
+    liveUrl: "https://medium.com/@nooraziz/future-content-creation-ai",
+    githubUrl: null,
+    images: [
+      "/images/blog/ai-content-1.jpg",
+      "/images/blog/ai-content-2.jpg"
+    ],
+    technologies: ["AI Writing", "Content Strategy", "Digital Tools"],
+    status: "published"
+  },
 ];
 
 // Helper function to get recent posts
