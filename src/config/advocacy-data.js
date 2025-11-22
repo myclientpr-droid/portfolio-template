@@ -96,11 +96,6 @@ export const advocacyData = {
       ctaText: "Support Education",
       ctaLink: "/campaigns/education",
       learnMoreLink: "/campaigns/education-details",
-      progress: {
-        goal: 10000,
-        current: 4250,
-        deadline: "December 2025"
-      }
     },
     {
       title: "Digital Rights for All",
@@ -110,11 +105,6 @@ export const advocacyData = {
       ctaText: "Sign Petition",
       ctaLink: "/campaigns/digital-rights",
       learnMoreLink: "/campaigns/digital-rights-details",
-      progress: {
-        goal: 50000,
-        current: 28750,
-        deadline: "Ongoing"
-      }
     },
     {
       title: "Refugee Entrepreneurship Fund",

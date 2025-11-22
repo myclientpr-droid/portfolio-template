@@ -3,7 +3,8 @@ export const siteConfig = {
   personal: {
     name: "Noor Aziz",
     title: "Passionate Advocate & Digital Storyteller",
-    email: "hello@nooraziz.com",
+    email: "nooraziz79586@gmail.com",
+    contact: "+8801827379586",
     location: "Global Citizen",
     avatar: "/assets/profile.jpg",
     bio: "A voice for the displaced, sharing stories of resilience, hope, and the power of technology to transform lives. Using digital platforms to bridge cultures and create understanding.",
@@ -92,7 +93,7 @@ categories: [
       category: "Refugee Stories",
       readTime: "12 min read",
       publishedAt: "2024-01-15",
-      image: "/images/blog/digital-voice.jpg",
+      image: "/images/photo-1488590528505-98d2b5aba04b.jpeg",
       featured: true,
       tags: ["Personal Journey", "Digital Advocacy", "Refugee Rights", "Technology"]
     },

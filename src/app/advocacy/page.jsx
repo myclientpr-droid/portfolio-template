@@ -139,28 +139,6 @@ export default function AdvocacyPage() {
                       </Button>
                     </div>
                   </div>
-                  {campaign.progress && (
-                    <div className="lg:w-64 bg-white rounded-xl p-6 border">
-                      <h4 className="font-semibold mb-3">Campaign Progress</h4>
-                      <div className="space-y-3">
-                        <div>
-                          <div className="flex justify-between text-sm mb-1">
-                            <span>Goal: {campaign.progress.goal}</span>
-                            <span>{campaign.progress.current} achieved</span>
-                          </div>
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <div 
-                              className="bg-green-500 h-2 rounded-full transition-all duration-500"
-                              style={{ width: `${(campaign.progress.current / campaign.progress.goal) * 100}%` }}
-                            ></div>
-                          </div>
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          {campaign.progress.deadline}
-                        </div>
-                      </div>
-                    </div>
-                  )}
                 </div>
               </motion.div>
             ))}
