@@ -34,7 +34,7 @@ export default function RootLayout( {
       <meta name="google-site-verification" content="HHEUeoU41cwIxQKZGJ_siRAyE6uPZ6J905DwzDN0ZMY" />
 
     {/* Google AdSense */}
-<meta name="google-adsense-account" content="ca-pub-4649419420895287">
+<meta name="google-adsense-account" content="ca-pub-4649419420895287"/>
 
     {/* Google Analytics */}
     <Script
