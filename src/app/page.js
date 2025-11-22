@@ -5,6 +5,10 @@ import Skills from '@/components/sections/Skills';
 import Contact from '@/components/sections/Contact';
 import { Navigation } from '@/components/layouts/Navigation';
 
+export const metadata = {
+  title: "Portfolio | Noor Aziz",
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen">

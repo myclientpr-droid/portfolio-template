@@ -21,8 +21,11 @@ const inter = Inter( {
 });
 
 export const metadata = {
-  title: 'Writer Noor Aziz',
-  description: 'A modern portfolio template built with Next.js',
+  title: {
+    default: 'Noor Aziz',
+    template: '%s | Noor Aziz',
+  },
+  description: 'Discover the creative writings, stories, and articles of Noor Aziz — a modern storyteller and reflective writer.',
 };
 
 export default function RootLayout( {

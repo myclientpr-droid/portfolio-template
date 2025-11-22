@@ -1,5 +1,10 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: "My Story | Noor Aziz",
+};
+
+
 export default function StoryPage() {
   return (
     <div className="min-h-screen pt-20 bg-background">

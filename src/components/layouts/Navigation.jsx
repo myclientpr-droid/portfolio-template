@@ -24,6 +24,7 @@ export function Navigation() {
     { label: 'Posts', href: '/posts' },
     { label: 'Categories', href: '/projects' },
     { label: 'Adcovacy', href: '/advocacy' },
+     { label: 'Skills', href: '/skills' },
     { label: 'About', href: '/about' },
   ];
 

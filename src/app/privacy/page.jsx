@@ -1,4 +1,7 @@
 import Link from 'next/link';
+export const metadata = {
+  title: "Privacy Policy | Noor Aziz",
+};
 
 export default function PrivacyPolicy() {
   return (

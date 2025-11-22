@@ -17,6 +17,7 @@ export function Footer() {
         { label: 'Categories', href: '/categories' },
         { label: 'Advocacy', href: '/advocacy' },
         { label: 'Contact', href: '/contact' },
+        { label: 'skills', href: '/contact' },
       ]
     },
     {

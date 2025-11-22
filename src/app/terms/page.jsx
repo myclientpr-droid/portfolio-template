@@ -1,5 +1,10 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: "Terms and Conditions| Noor Aziz",
+};
+
+
 export default function TermsOfService() {
   return (
     <div className="min-h-screen pt-20 bg-background">
@@ -126,7 +131,7 @@ export default function TermsOfService() {
                   If you have any questions about these Terms of Service, please contact us:
                 </p>
                 <ul className="list-disc list-inside space-y-1">
-                  <li>By email: legal@nooraziz.com</li>
+                  <li>By email: nooraziz79586@gmail.com</li>
                   <li>Through our contact form on this website</li>
                 </ul>
               </section>

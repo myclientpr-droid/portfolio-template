@@ -3,6 +3,11 @@ import { postsData } from '@/config/posts-data';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "Post Detail | Noor Aziz",
+};
+
+
 export default function PostDetailPage({ params }) {
   const {slug} = params;
   const post = postsData.find(u => u.slug === slug);

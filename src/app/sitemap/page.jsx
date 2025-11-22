@@ -22,7 +22,7 @@ export default function Sitemap() {
       links: [
         { label: 'Home', href: '/', description: 'Welcome page and introduction' },
         { label: 'About', href: '/about', description: 'Learn about my background and journey' },
-        { label: 'Blog', href: '/blog', description: 'All blog posts and articles' },
+        { label: 'Posts', href: 'posts', description: 'All blog posts and articles' },
         { label: 'Contact', href: '/contact', description: 'Get in touch with me' },
       ]
     },
@@ -204,7 +204,7 @@ export default function Sitemap() {
                   </svg>
                 </Link>
                 <Link
-                  href="/blog"
+                  href="/posts"
                   className="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-semibold"
                 >
                   Browse All Articles
